@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	   					   
+
+	<bean id="amazon" class="framework.controller.ApplicationController"/>
+	
+	<bean id="firefox" class="org.openqa.selenium.firefox.FirefoxDriver" scope="prototype"/>
+	
+	<bean id = "testScriptbase" class="framework.TestScriptBase" abstract="true" />
+	
+	<bean id = "headerController" class="framework.controller.HeaderController"/>
+		
+	<bean id="headerModel" class="framework.model.HeaderModel"/>
+		
+	<bean id = "searchController" class="framework.controller.SearchController"/>
+		
+	<bean id="searchModel" class="framework.model.SearchModel"/>
+	
+		
+
+	
+</beans>
