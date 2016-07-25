@@ -14,14 +14,22 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     
     <testNG.Version>6.9.10</testNG.Version>
+    <selenium-java.Version>2.53.1</selenium-java.Version>
     
   </properties>
 
   <dependencies>
    <dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>${testNG.Version}</version>
+   	 <groupId>org.testng</groupId>
+   	 <artifactId>testng</artifactId>
+   	 <version>${testNG.Version}</version>
 	</dependency>
+	
+	<dependency>
+   		 <groupId>org.seleniumhq.selenium</groupId>
+    	<artifactId>selenium-java</artifactId>
+    	<version>${selenium-java.Version}</version>
+	</dependency>
+
   </dependencies>
 </project>
