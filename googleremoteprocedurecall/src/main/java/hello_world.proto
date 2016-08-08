@@ -1,0 +1,24 @@
+
+syntax = "proto3";
+option java_generic_services = true;
+package com.grpc.example;
+option java_package = "com.grpc.example";
+option java_multiple_files = true;
+option java_outer_classname = "CreateUser";
+
+ // The greeting service definition.
+service CreateUserService {
+
+    rpc CreateUser(UserRequest) returns (UserResponse) {}
+
+}  // The request message containing the user's name.
+
+message UserRequest{
+
+  string name = 1;
+  string age = 2;
+}
+
+ message UserResponse {
+  string id= 1;
+} 
